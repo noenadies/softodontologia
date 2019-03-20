@@ -1,0 +1,369 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    background: #1E1E2F;
+    background: -moz-linear-gradient(-45deg, #1E1E2F 0%, #1C1C27 50%, #1D1D23 100%);
+    background: -webkit-linear-gradient(-45deg, #1E1E2F 0%, #1C1C27 50%, #1D1D23 100%);
+    background: linear-gradient(135deg, #1E1E2F 0%, #1C1C27 50%, #1D1D23 100%);
+  }
+  
+
+
+  /* Fixed sidenav, full height */
+  .sidenav {
+
+
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+    font-size: 11px;
+
+    background-color: #1E8BF8;
+    background-color: -moz-linear-gradient(top, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+    background-color: -webkit-linear-gradient(top, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+    background-color: linear-gradient(to bottom, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+
+
+    position: absolute;
+    top:10%;
+    left: 22px;
+    height: 80%;
+    width: 100px;
+
+
+border-radius: 3%;
+
+color: #fbfbff;
+
+  }
+
+  .sidenav:hover{
+
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  
+    font-size: 11px;
+
+    background-color: #1E8BF8;
+    background-color: -moz-linear-gradient(top, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+    background-color: -webkit-linear-gradient(top, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+    background-color: linear-gradient(to bottom, #1E8BF8 0%, #2774f6 50%, #3358F4 100%);
+
+
+    position: absolute;
+    top:10%;
+    left: 22px;
+    height: 80%;
+    width: 150px;
+
+transition: 1s;
+-moz-border-radius: 6px 6px 6px 6px ;
+-webkit-border-radius:6px 6px 6px 6px ;
+border-radius: 6px 6px 6px 6px ;
+
+color: #fbfbff;
+
+  }
+
+
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-size: 11px;
+
+    color: #fbfbff;
+
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #fbfbff;
+    font-size: 11px;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    font-size: 11px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: #fbfbff;
+    font-size: 11px;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    font-size: 11px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    font-size: 11px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  
+    
+  }
+
+
+  #idregistrarnueocliente{
+
+    position: absolute;
+    top:10%;
+    left:155.0px;
+    height: 40%;
+    width:40%;
+background-color:#27293d;
+-moz-border-radius: 6px 6px 6px 6px ;
+-webkit-border-radius:6px 6px 6px 6px ;
+border-radius: 6px 6px 6px 6px ;
+
+display: flex ;
+flex-direction: column ;
+flex-wrap: wrap ;
+justify-content: space-around ;
+align-items: center ;
+align-content: flex-start ;
+  }
+
+  #idlabel1{
+    position: absolute;
+    top:12px;
+    left:3%;
+    height: 20px;
+    width:50%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;  color: #ffffff;
+    font-size: 15px;
+
+  }
+
+
+#idlabel2{
+
+
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+    position: absolute;
+    top:45px;
+    left:3%;
+    height: 30px;
+    width:50%;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+    color: #a3a6b1;
+    font-size: 13px;
+    background-color: #27293d;
+
+}
+
+
+
+
+
+
+
+  #idinput1{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    top:90px;
+    left:3%;
+    height: 30px;
+    width:94%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  
+    color:#cfd4d7;
+    font-size: 15px;
+    background-color: #27293d;
+    border: 2px solid #2b3553;
+    border-radius: 4%;
+
+  }
+
+  #idinput1:hover{
+
+    border: 2px solid #00ffb3;
+    border-radius: 4%;
+  }
+
+  #idinput1:focus{
+
+    border: 2px solid #1d8cf8;
+    border-radius: 4%;
+
+  }
+
+
+
+
+
+
+
+
+  #idlabel3{
+
+
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+    position: absolute;
+    top:150px;
+    left:3%;
+    height: 30px;
+    width:50%;
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+    color: #a3a6b1;
+    font-size: 13px;
+    background-color: #27293d;
+
+}
+
+
+
+
+
+
+
+
+
+
+  #idinput2{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    position: absolute;
+    top:190px;
+    left:3%;
+    height: 30px;
+    width:94%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+  
+    color:#cfd4d7;
+    font-size: 15px;
+    background-color: #27293d;
+    border: 2px solid #2b3553;
+    border-radius: 4%;
+
+  }
+
+  #idinput2:hover{
+
+    border: 2px solid #00ffb3;
+    border-radius: 4%;
+  }
+
+  #idinput2:focus{
+
+    border: 2px solid #1d8cf8;
+    border-radius: 4%;
+
+  }

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style><link rel="stylesheet" href="micss.css">
+</head><link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+
+</script>
+<body>
+
+
+
+
+<div id="idmarketing">
+
+
+
+  <img  id="idmegmensajetext"src="mensaje.jpg" >
+
+  <div id="iddivmensajetext">
+<input  id="idinputmensjetext">
+<p id="idpmensjatext"></p>
+<button id="idbtenviarmestext"  onclick="enviarmensajestext();"> Enviar Mensajes</button>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  
+
+<div  id="idpanellogin">
+
+  <img id="idimgfondologin" src="./img/fondologin.jpg" >
+<div id="idcontenedorloginmio">
+  <h3 id="h3logincentral">VIRTUAL CLINICA<BR>VICLI</h3>
+  <div class="container"><br>
+    <label class="cllabelloginp" for="uname"><b>Username</b></label>
+    <input id="iduserloginp" class="clidlonginp" type="text" placeholder="Enter Username" name="uname" required>
+
+    <label class="cllabelloginp" for="psw"><b>Password</b></label>
+    <input class="clidlonginp" id="idpassloginp" type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button onclick="onfloginp();" id="idbtloginp" >Login</button>
+  
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<h1 id="idh1principalmenu"></h1>
+
+
+
+<div id="idsidenav" class="sidenav">
+<h1 id="idh1principalmenu"></h1>
+  <button onclick="fcontactos();" class="dropdown-btn">Contactos
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a onclick="iranuevocliente();">Nuevo Cliente</a>
+    <a  id="idairadirecpaciente" onclick="iradirectoriopacientes();" >Directorio de  Pacientes</a>
+    <a href="#">Link 3</a>
+  </div>
+
+
+  <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+
+
+  <a href="#contact">Search</a>
+
+  <a href="#about">About</a>
+  <a  onclick="odontogramair();">Odontograma</a>
+  <a href="#clients">Clients</a>
+  <a onclick="abreidmarketing();" >Marketing</a>
+
+
+
+
+
+
+</div>
+
+<div class="main">
+  <h2>Sidebar Dropdown</h2>
+  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
+</div>
+
+
+
+
+
+<div id="idpanelnievcliente">
+
+
+
+
+
+    <div class="container0" id="idregistrarnueocliente">
+
+        <div class="container">
+            <label class="cllabel" for="uname"><b>Razon Social</b></label>
+            <input class="clinputmio" type="text" placeholder="Razon Social" name="RazonSocial" required>
+    
+            <label class="cllabel" for="uname"><b>RFC</b></label>
+            <input class="clinputmio" type="text" placeholder="RFC" name="RFC" required>
+    
+            <label class="cllabel" for="uname"><b>Domicilio Fiscal</b></label>
+            <input class="clinputmio" type="text" placeholder="Domicilio Fiscal" name="DomicilioFiscal" required>
+    
+            <label class="cllabel" for="uname"><b>Correo electronico</b></label>
+            <input class="clinputmio" type="text" placeholder="Correoelectronico" name="Correoelectronico" required>
+    
+            <label class="cllabel" for="uname"><b>Telefono</b></label>
+            <input id="idtelefononuecliete" class="clinputmio" type="text" placeholder="Telefono" name="Telefono" required>
+    
+    
+    
+    
+              
+               
+              </div>
+    
+    
+    </div>
+    
+    <div class="container0" id="idregistrarnueocliente2">
+    
+        <div class="container">
+            <label class="cllabel" for="uname"><b>Celular</b></label>
+            <input class="clinputmio" type="text" placeholder="Celular" name="Celular" required>
+    
+            <label class="cllabel" for="uname"><b>Fax</b></label>
+            <input class="clinputmio" type="text" placeholder="Fax" name="Fax" required>
+    
+            <label class="cllabel" for="uname"><b>Lista de precios</b></label>
+            <input class="clinputmio" type="text" placeholder=">Lista de precios" name=">Listadeprecios" required>
+    
+            <label class="cllabel" for="uname"><b>Vendedor</b></label>
+            <input class="clinputmio" type="text" placeholder="Vendedor" name="Vendedor" required>
+
+            <label class="cllabel" for="uname"><b>Profesional a  cargo</b></label>
+            <input class="clinputmio" type="text" placeholder="Profesional a  cargo" name="profesiolacargo" required>
+    
+            <label class="cllabel" for="uname"><b>Terminos de Pago</b></label>
+            <input class="clinputmio" type="text" placeholder="TerminosdePago" name="TerminosdePago" required>
+    
+    
+    
+    
+                <button onclick="subeafirebasertelefono();" class="clsbutton" >Guardar</button>
+            
+              </div>
+    
+    
+    </div>
+    
+    
+    
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="idpaneldirectoriopacientes">
+
+
+
+<div id="iddivbuscardirpacietnes">
+
+
+
+
+  <h2 id="idh2">Mitabla</h2>
+
+  <input type="text" id="myInputnotas" onkeyup="myFunction()" placeholder="Buscar " title="Type in a name">
+  <table id="myTablenotas">
+    <tr class="header">
+        <th style="width:20%;">Quien Escribio</th>
+        <th style="width:70%;">Nota</th>
+        <th style="width:10%;">Fecha</th>
+  
+  
+  
+    </tr>
+  
+  
+  
+  
+    
+  </table>
+
+
+
+
+
+
+
+</div>
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="mijs.js"></script>
+
+</body>
+</html> 

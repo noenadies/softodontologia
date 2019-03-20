@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+    #idpmsn{
+        position: absolute;
+        top: 38%;
+        left: 5%;
+        width: 100%;
+        color: brown;
+        background-color: black;
+        font-size: 17px;
+
+    }
+    
+    </style>
+<script src="jquery-3.3.1.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+    var msnfire;
+  // Initialize Firebase
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDDeEsPxBYxzisg4GDOpmYbHBLvIw6L_IY",
+    authDomain: "mejorvargaslleras-4fd2e.firebaseapp.com",
+    databaseURL: "https://mejorvargaslleras-4fd2e.firebaseio.com",
+    projectId: "mejorvargaslleras-4fd2e",
+    storageBucket: "mejorvargaslleras-4fd2e.appspot.com",
+    messagingSenderId: "912759721594"
+  };
+  firebase.initializeApp(config);
+
+
+
+
+  var vllamar=false;
+
+  var telefonos;
+
+//var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
+
+
+firebase.database().ref().child("enviarmensaje").on('value', function(snapshot) {
+    document.getElementById("idpmsn").innerHTML=snapshot.val();
+    msnfire=snapshot.val();
+
+
+    firebase.database().ref().child("telefonos").on('value', function(snapshot) {
+        document.getElementById("idpmsn").innerHTML=snapshot.val();
+    telefonos=snapshot.val();
+    console.log(telefonos);
+               enviar();
+    
+    });
+    
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+<h2>Software Odontologia</h2>
+    <button id="bttraejson" >Get JSON data</button>
+    <button id="btenviamensaje" onclick="enviar();" >enviar mensaje</button>
+
+<div></div>
+<p id="idpmsn">primer sms</p>
+</body>
+<script>
+    var eljs="";
+    $(document).ready(function(){
+
+        $.ajax({
+                   
+                   url:   'smsjson.json',
+                    dataType:  'json',
+                   type:  'get',
+                   cache:false,
+                   success:  function (data) {
+                          // $(data.inicio).html(response);
+                          console.log(data);
+           eljs=data.Personas;
+                       
+                         // alert(data.inicio.uno);
+                   }
+           });
+           
+           
+      $("button").click(function(){
+    
+    
+        $.ajax({
+                   
+            url:   'smsjson.json',
+             dataType:  'json',
+            type:  'get',
+            cache:false,
+            success:  function (data) {
+                   // $(data.inicio).html(response);
+                  // console.log(data);
+                  eljs=data.Personas;
+                
+                  // alert(data.inicio.uno);
+            }
+    });
+    
+    
+    
+    
+    
+      });
+    });
+
+
+
+var tstxmsn="";
+var telnum="";
+
+    function showAndroidToast(toast) {
+        Android.showToast("",tstxmsn,telnum);
+    }
+var  vw =window.innerWidth;
+    function enviar(){
+if(vw>=660){
+    for(var i in telefonos)
+    {
+       // Android.showToast("enviarmsnya",tstxmsn,telefonos[i]);
+
+       // console.log(i+":  "+ telefonos[i]);
+    }
+    alert("no se  envio el mensaje, consulte  3138640961");
+    }
+
+
+ else{
+    vllamar=true;
+   
+
+for(var i in telefonos)
+{stacu=telefonos[i];
+ Android.showToast("enviarmsnya",msnfire,telefonos[i]);
+  document.getElementById("idpmsn").innerHTML=telefonos[i]+ "  "+msnfire+"<br>";
+console.log("tel "+telefonos[i]);
+}
+
+
+
+
+ }       
+    }
+var idx=0;
+var stacu="";
+
+
+    function llamar(tstxmsn,telnum){
+/*
+
+        for(var i in telefonos)
+    {
+      Android.showToast("enviarmsnya",tstxmsn,telefonos[i]);
+
+        //console.log(i+":  "+ telefonos[i]);
+    }*/
+
+//Android.showToast("enviarmsnya",tstxmsn,telnum);
+        if(true){
+           // eljs[idx].telefono;
+          //  setTimeout(function(){ Android.showToast("enviarmsnya",tstxmsn,telnum); }, 100);
+        }
+
+        else{
+
+        }
+       
+
+
+    }
+    
+   // document.getElementById("idpmsn").innerHTML=1234;
+    </script>
+
+
+</html>
